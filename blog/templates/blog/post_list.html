@@ -1,27 +1,22 @@
 <html>
-<head>
-    <title>Ola´s blog</title>
-</head>
-<body>
-    <h1>A heading</h1>
-    <h2>A sub-heading</h2>
-    <h3>A sub-sub-heading</h3>
-    <p>Paragraph of text of any kind
-        <br>
-        <em>Emphasize my text</em>
-        <br>
-        <strong>Emphasize my text even more</strong>
-    </p>
-    <h1><strong><a href = 'www.marca.es'>esto es un enlace</a></strong></h1>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
 
-    <ul>
-        <li>first item</li>
-        <li>Second item</li>
-        <li>Third item</li>
-        <li>Fourth item</li>
-        <li>Fifth item</li>
-        <li>Sixth item</li>
-        <li>Seventh item</li>
-        </ul>
-</body>
+        <div>
+            {% for post in posts %}
+                <div>
+                    <p> Published: {{ post.published_date}}</p>
+                    <h2><a href=''> {{ post.title }} </a></h2>
+                    <h3> <em>By</em> <strong> {{ post.author }} </strong> </a></h3>
+                    <p><em>{{ post.text|linebreaksbr }} </em></p>
+                </div>
+            {% endfor %}
+        </div>
+
+    </body>
 </html>
