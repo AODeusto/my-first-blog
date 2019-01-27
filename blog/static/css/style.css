@@ -1,0 +1,46 @@
+h1 a, h2 a {
+    color : #E66000;
+}
+
+h1, h2 {
+    color : #E66000 ;
+    font-family : 'Lobster' ,cursive ;
+}
+
+
+.header {
+    background-color : #E66000;
+    padding :25px 40px 10px 40px;
+
+}
+
+.header h1 a {
+    color : #ffffff;
+    font-size : 55px;
+}
+
+.header h4 a {
+    color : #ffffff;
+    font-size : 25px;
+    margin-left : 280px;
+}
+
+.date p {
+    color : #94999C;
+    font-size : 13px;
+    margin-left : 20px;
+}
+
+.content  {
+    padding : 20px;
+    margin-left : 55px;
+}
+
+.post_text {
+    margin-left : 20px;
+}
+
+.post_text p {
+    margin-left : 20px;
+    font-size : 18px;
+}
